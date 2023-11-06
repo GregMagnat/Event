@@ -41,6 +41,6 @@ end
 end
 =end
 
-User.create(email: 'user1@yopmail.com', encrypted_password: '123456', description: 'Описание пользователя 1', first_name: 'Имя1', last_name: 'Фамилия1')
-User.create(email: 'user2@yopmail.com', encrypted_password: '123456', description: 'Описание пользователя 2', first_name: 'Имя2', last_name: 'Фамилия2')
-User.create(email: 'user3@yopmail.com', encrypted_password: '123456', description: 'Описание пользователя 3', first_name: 'Имя3', last_name: 'Фамилия3')
+User.create(email: 'user1@yopmail.com', encrypted_password: '123456', description: 'roi singe 1', first_name: 'Sylvain', last_name: 'Delajungle')
+User.create(email: 'user2@yopmail.com', encrypted_password: '123456', description: 'reine singe 2', first_name: 'Marina', last_name: 'Delajungle')
+User.create(email: 'user3@yopmail.com', encrypted_password: '123456', description: 'bébé singe 3', first_name: 'Ikram', last_name: 'Delajungle')
