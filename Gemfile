@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem "faker"
+
 gem "table_print"
 
 gem "better_errors"
