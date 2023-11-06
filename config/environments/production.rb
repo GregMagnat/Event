@@ -1,5 +1,15 @@
 require "active_support/core_ext/integer/time"
 
+ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['MAILJET_LOGIN'],
+  :password => ENV['MAILJET_PWD'],
+  :domain => 'eventtte-db.fly.dev',
+  :address => 'in-v3.mailjet.com',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
