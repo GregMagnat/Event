@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+
+  root to: 'events#index'
+
   resources :attendances
   resources :events
   resources :users
- 
-  get "up" => "rails/health#show", as: :rails_health_check
-
+  
 end
