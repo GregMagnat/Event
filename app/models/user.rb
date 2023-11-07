@@ -10,6 +10,7 @@ class User < ApplicationRecord
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :description, presence: true
+    validates :email, presence: true
 
     after_create :welcome_send
 
