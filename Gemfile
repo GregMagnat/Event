@@ -6,8 +6,6 @@ gem "faker"
 
 gem "dotenv-rails"
 
-gem "letter_opener"
-
 gem "table_print"
 
 gem "better_errors"
