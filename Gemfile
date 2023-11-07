@@ -4,6 +4,8 @@ ruby "3.2.2"
 
 gem "faker"
 
+gem "devise"
+
 gem "dotenv-rails"
 
 gem "table_print"
