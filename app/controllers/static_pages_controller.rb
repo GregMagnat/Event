@@ -4,4 +4,6 @@ class StaticPagesController < ApplicationController
 
   def secret
   end
+
+  before_action :authenticate_user!, only: [:secret]
 end

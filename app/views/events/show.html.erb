@@ -1,10 +1,28 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @event %>
-
-<div>
-  <%= link_to "Edit this event", edit_event_path(@event) %> |
-  <%= link_to "Back to events", events_path %>
-
-  <%= button_to "Destroy this event", @event, method: :delete %>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Event</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Incluez votre fichier CSS ici -->
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h1 class="text-center">Event Details</h1>
+            <div class="event-details">
+              <%= render @event %>
+            </div>
+            <div class="actions">
+              <%= link_to "Edit this event", edit_event_path(@event), class: "btn btn-primary" %>
+              <%= link_to "Back to events", events_path, class: "btn btn-secondary" %>
+              <%= button_to "Destroy this event", @event, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
