@@ -22,11 +22,14 @@
   </head>
 
   <body data-turbo="false">
-    <nav class="navbar navbar-expand-xl navbar-dark" style="z-index: 3; background-color: rgba(, 0, 0, 0.5); ">
+    <nav class="navbar navbar-expand-xl navbar-dark" style="z-index: 3; background-color: rgba(0, 0, 0, 0.5); ">
       <div class="container-fluid">
-        <a href="/" class="navbar-brand">Event Gre</a>
+        <img src="<%= asset_path('beige nb.png') %>" alt="Logo" style="max-height: 40px; max-width: 150%; z-index:4;>
         <div class="navbar-nav ms-auto">
           <ul class="navbar-nav">
+          <li class="nav-item">
+                <%= link_to "Register", new_user_registration_path, class: "nav-link" %>
+            </li>
             <li class="nav-item">
                 <%= link_to "Register", new_user_registration_path, class: "nav-link" %>
             </li>
