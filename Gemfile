@@ -8,6 +8,8 @@ gem "devise"
 
 gem "dotenv-rails"
 
+gem 'sassc-rails'
+
 gem "table_print"
 
 gem "better_errors"
