@@ -15,9 +15,9 @@
               <%= render @event %>
             </div>
             <div class="actions">
-              <%= link_to "Edit this event", edit_event_path(@event), class: "btn btn-primary" %>
-              <%= link_to "Back to events", events_path, class: "btn btn-secondary" %>
-              <%= button_to "Destroy this event", @event, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+              <%= link_to "Modifie ton event", edit_event_path(@event), class: "btn btn-primary" %>
+              <%= link_to "Retour aux events", events_path, class: "btn btn-secondary" %>
+              <%= button_to "Détruit ton event", @event, method: :delete, data: { confirm: "Sur de toi ?" }, class: "btn btn-danger" %>
             </div>
           </div>
         </div>
