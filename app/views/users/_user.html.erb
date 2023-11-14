@@ -1,27 +1,10 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
-
-  <p>
-    <strong>Encrypted password:</strong>
-    <%= user.encrypted_password %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= user.description %>
-  </p>
-
-  <p>
-    <strong>First name:</strong>
-    <%= user.first_name %>
-  </p>
-
-  <p>
-    <strong>Last name:</strong>
-    <%= user.last_name %>
-  </p>
-
+<div class="card mx-auto mt-5" style="max-width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title">Ton profil</h4>
+    <h6 class="card-subtitle mb-2 text-muted"><%= dom_id user %></h6>
+    <p class="card-text"><strong>Email:</strong> <%= user.email %></p>
+    <p class="card-text"><strong>Encrypted password:</strong> <%= user.encrypted_password %></p>
+    <p class="card-text"><strong>First name:</strong> <%= user.first_name %></p>
+    <p class="card-text"><strong>Last name:</strong> <%= user.last_name %></p>
+  </div>
 </div>

@@ -2,9 +2,7 @@
 
 <%= render @user %>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
+<div class="d-flex justify-content-center mt-3">
+  <%= link_to "Edit ton profil", edit_user_path(@user), class: "btn btn-primary mr-2" %>
+  <%= button_to "Détruit ton profil", @user, method: :delete, class: "btn btn-secondary" %>
 </div>
