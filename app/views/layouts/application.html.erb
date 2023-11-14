@@ -18,17 +18,29 @@
       height: 100vh;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
 
     .logo-container {
       position: absolute;
-      top: -170px; /* Ajustez cette valeur pour définir la distance entre le haut de la page et l'image */
-      left: -100px; /* Ajustez cette valeur pour définir la distance entre le côté gauche de la page et l'image */
+      top: -170px;
+      left: -100px; 
+      z-index: 4;
+    }
+
+    .second-logo-container {
+      position: absolute;
+      bottom: -70px; 
+      right: -270px;
       z-index: 4;
     }
 
     .navbar-nav {
-      margin-left: auto; /* Déplace les éléments vers la droite */
+      margin-left: auto;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 30px; 
     }
   </style>
 </head>
@@ -64,5 +76,12 @@
       </ul>
     </div>
   </nav>
+
+  <div class="second-logo-container">
+    <img src="<%= asset_path('diable bas.png') %>" alt="Second Logo" style="max-width: 60%;">
+  </div>
+
   <%= yield %>
 </body>
+
+</html>
